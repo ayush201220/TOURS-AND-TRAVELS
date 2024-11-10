@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilgrimage Tours - Explore Divine Destinations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ff9800;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hero {
+            background-image: url('pilgrimage image.jpg');
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h2 {
+            color: #fff;
+            font-size: 48px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .pilgrimage-services {
+            padding: 50px;
+            background-color: #1e1e1e;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .pilgrimage-services h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #ff9800;
+        }
+
+        .destination-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .destination {
+            width: 45%;
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .destination img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .destination h3 {
+            margin: 15px 0;
+            color: #ff9800;
+        }
+
+        .destination-info ul {
+            list-style-type: square;
+            text-align: left;
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .destination:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .footer {
+            background-color: #1f1f1f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .destination {
+                width: 100%;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Explore Divine Destinations</h1>
+        <nav>
+            <ul>
+                <li><a href="#vaishno-devi">Vaishno Devi</a></li>
+                <li><a href="#amarnath">Amarnath</a></li>
+                <li><a href="#kedarnath">Kedarnath</a></li>
+                <li><a href="#badrinath">Badrinath</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Spiritual Journeys to India's Sacred Places</h2>
+    </section>
+
+    <!-- Pilgrimage Services Section -->
+    <section class="pilgrimage-services">
+        <h2>Our Pilgrimage Packages</h2>
+        <div class="destination-container">
+
+            <!-- Vaishno Devi -->
+            <div id="vaishno-devi" class="destination">
+                <img src="vaishno devi image.jpg" alt="Vaishno Devi">
+                <h3>Vaishno Devi Yatra</h3>
+                <p><strong>Package Price:</strong> ₹5000 per person</p>
+                <div class="destination-info">
+                    <h4>Included Services:</h4>
+                    <ul>
+                        <li>Accommodation: 2 nights in a 3-star hotel</li>
+                        <li>Food: Pure vegetarian meals (breakfast, lunch, and dinner)</li>
+                        <li>Guided trek to the holy shrine</li>
+                        <li>Pickup and drop from Jammu railway station/airport</li>
+                    </ul>
+                    <p><strong>Duration:</strong> 3 days / 2 nights</p>
+                </div>
+            </div>
+
+            <!-- Amarnath -->
+            <div id="amarnath" class="destination">
+                <img src="amarnath image.jfif" alt="Amarnath">
+                <h3>Amarnath Yatra</h3>
+                <p><strong>Package Price:</strong> ₹8000 per person</p>
+                <div class="destination-info">
+                    <h4>Included Services:</h4>
+                    <ul>
+                        <li>Accommodation: Tents and lodges along the route</li>
+                        <li>Food: Pure vegetarian meals</li>
+                        <li>Pony or helicopter rides (optional)</li>
+                        <li>Pickup and drop from Srinagar airport</li>
+                    </ul>
+                    <p><strong>Duration:</strong> 5 days / 4 nights</p>
+                </div>
+            </div>
+
+            <!-- Kedarnath -->
+            <div id="kedarnath" class="destination">
+                <img src="kedarnath image.webp" alt="Kedarnath">
+                <h3>Kedarnath Yatra</h3>
+                <p><strong>Package Price:</strong> ₹7000 per person</p>
+                <div class="destination-info">
+                    <h4>Included Services:</h4>
+                    <ul>
+                        <li>Accommodation: 2 nights in a budget hotel</li>
+                        <li>Food: Breakfast and dinner provided</li>
+                        <li>Guided trek to Kedarnath temple</li>
+                        <li>Pickup and drop from Haridwar or Dehradun</li>
+                    </ul>
+                    <p><strong>Duration:</strong> 3 days / 2 nights</p>
+                </div>
+            </div>
+
+            <!-- Badrinath -->
+            <div id="badrinath" class="destination">
+                <img src="badrinath image.jpg" alt="Badrinath">
+                <h3>Badrinath Yatra</h3>
+                <p><strong>Package Price:</strong> ₹6000 per person</p>
+                <div class="destination-info">
+                    <h4>Included Services:</h4>
+                    <ul>
+                        <li>Accommodation: 2 nights in a 3-star hotel</li>
+                        <li>Food: Vegetarian meals throughout the trip</li>
+                        <li>Temple visit and local sightseeing</li>
+                        <li>Pickup and drop from Rishikesh or Dehradun</li>
+                    </ul>
+                    <p><strong>Duration:</strong> 3 days / 2 nights</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Explore Divine Destinations. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

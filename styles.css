@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #eaeaea; /* Light text color */
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(90deg, #1a1a1a, #2c2c2c); /* Dark gradient */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease; /* Animation for header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0; /* Remove padding for nav */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Gold on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('indian hills.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay */
+}
+
+.hero-text {
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-text h2 {
+    color: #fff; /* White text for hero */
+    font-size: 52px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.hero-text p {
+    color: #ddd; /* Slightly lighter text */
+    font-size: 26px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Packages Section */
+.packages {
+    padding: 50px;
+    background-color: #1e1e1e; /* Dark background for packages */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Space around the section */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+.packages h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #4a90e2; /* Blue accent color */
+    position: relative;
+}
+
+.packages h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: #6ab04c; /* Green accent line */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.package-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.package {
+    width: 22%;
+    margin-bottom: 30px;
+    background-color: #2a2a2a; /* Dark package cards */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.package img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.package h3 {
+    margin: 15px 0;
+}
+
+/* Car Rentals Section */
+#car-rentals {
+    background-color: #1e1e1e; /* Dark background */
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.rental-info {
+    margin-bottom: 40px;
+}
+
+.driver-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.driver {
+    width: 30%;
+    text-align: center;
+    background-color: #2a2a2a; /* Dark background for driver */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.driver:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.driver img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+/* About Us Section */
+#about {
+    padding: 60px;
+    background-color: #1e1e1e; /* Dark background */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px;
+    background-color: #1e1e1e; /* Dark background for contact */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2a2a2a; /* Dark gray form background */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #4a90e2; /* Blue accent color */
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid #555; /* Darker border */
+    font-size: 16px;
+    background-color: #fff; /* White input background */
+    color: #333; /* Dark text in inputs */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #4a90e2; /* Blue accent for focus */
+    outline: none;
+}
+
+#contact-form button {
+    padding: 12px 30px;
+    background-color: #4a90e2; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #1a1a1a, #2c2c2c); /* Dark gradient */
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .package {
+        width: 90%; /* Adjust package width for smaller screens */
+        margin: 10px auto; /* Center alignment */
+    }
+
+    .driver {
+        width: 80%; /* Adjust driver width for smaller screens */
+        margin-bottom: 20px; /* Space between drivers */
+    }
+
+    .hero-text h2 {
+        font-size: 36px; /* Smaller font for hero on mobile */
+    }
+
+    .hero-text p {
+        font-size: 20px; /* Smaller font for hero on mobile */
+    }
+}

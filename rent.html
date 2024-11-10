@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Car Services - Explore India</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+header {
+    background-color: #1f1f1f; /* Darker header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff9800; /* Accent color for links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url('photo.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Added for positioning text */
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* More pronounced text shadow */
+    text-align: center; /* Center text */
+}
+
+.rental-services {
+    padding: 50px;
+    background-color: #1e1e1e; /* Dark section for services */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Space around the section */
+}
+
+.rental-services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff9800; /* Accent color for headings */
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 45%;
+    background-color: #2a2a2a; /* Darker service cards */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added shadow transition */
+}
+
+.service img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin: 15px 0;
+    color: #ff9800; /* Accent color for service titles */
+}
+
+.service-info ul {
+    list-style-type: square;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* More shadow on hover */
+}
+
+.driver-reviews {
+    background-color: #1e1e1e; /* Dark section for reviews */
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Space around the section */
+}
+
+.driver-reviews h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff9800; /* Accent color for headings */
+}
+
+.review-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.driver-review {
+    width: 30%;
+    padding: 20px;
+    background-color: #2a2a2a; /* Darker review cards */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.driver-review img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #ffcc00;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #1f1f1f; /* Darker footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .service, .driver-review {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Explore India - Rental Car Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#micro">Micro Cars</a></li>
+                <li><a href="#mini">Mini Cars</a></li>
+                <li><a href="#sedan">Sedans</a></li>
+                <li><a href="#traveller">Traveller Buses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>
+            Comfortable, Affordable, and All-India Services</h2>
+    </section>
+
+    <!-- Rental Car Services Section -->
+    <section class="rental-services">
+        <h2 >
+            Our Car Rental Services</h2>
+        <div class="service-container">
+
+            <!-- Micro Cars -->
+            <div id="micro" class="service">
+                <img src="i 20 image.jfif" alt="Micro Car">
+                <h3>Micro Cars</h3>
+                <p><strong>Price:</strong> ₹10 per km</p>
+                <div class="service-info">
+                    <h4>Facilities:</h4>
+                    <ul>
+                        <li>Air Conditioning</li>
+                        <li>Bottled Water</li>
+                        <li>Comfortable 4-Seater</li>
+                    </ul>
+                    <p><strong>Capacity:</strong> 4 persons</p>
+                </div>
+            </div>
+
+            <!-- Mini Cars -->
+            <div id="mini" class="service">
+                <img src="alto image.jpg" alt="Mini Car">
+                <h3>Mini Cars</h3>
+                <p><strong>Price:</strong> ₹12 per km</p>
+                <div class="service-info">
+                    <h4>Facilities:</h4>
+                    <ul>
+                        <li>Air Conditioning</li>
+                        <li>Bottled Water</li>
+                        <li>Spacious 5-Seater</li>
+                    </ul>
+                    <p><strong>Capacity:</strong> 5 persons</p>
+                </div>
+            </div>
+
+            <!-- Sedans -->
+            <div id="sedan" class="service">
+                <img src="sedan image.jpg" alt="Sedan Car">
+                <h3>Sedans</h3>
+                <p><strong>Price:</strong> ₹15 per km</p>
+                <div class="service-info">
+                    <h4>Facilities:</h4>
+                    <ul>
+                        <li>Air Conditioning</li>
+                        <li>Luxury Seating</li>
+                        <li>Bottled Water & Refreshments</li>
+                    </ul>
+                    <p><strong>Capacity:</strong> 4 persons</p>
+                </div>
+            </div>
+
+            <!-- Traveller Buses -->
+            <div id="traveller" class="service">
+                <img src="traveller bus.jpg" alt="Traveller Bus">
+                <h3>Traveller Buses</h3>
+                <p><strong>Price:</strong> ₹20 per km</p>
+                <div class="service-info">
+                    <h4>Facilities:</h4>
+                    <ul>
+                        <li>Air Conditioning</li>
+                        <li>Luxury Recliner Seats</li>
+                        <li>Bottled Water & Snacks</li>
+                    </ul>
+                    <p><strong>Capacity:</strong> 12-16 persons</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Driver Reviews Section -->
+    <section class="driver-reviews">
+        <h2>Driver Reviews</h2>
+        <div class="review-container">
+
+            <!-- Driver 1 -->
+            <div class="driver-review">
+                <img src="car driver 1 .jpg" alt="Driver 1">
+                <h4>Rajesh Kumar</h4>
+                <p>Rajesh is known for his safe driving and polite nature. Customers always appreciate his punctuality.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <!-- Driver 2 -->
+            <div class="driver-review">
+                <img src="car diver 2.jpg" alt="Driver 2">
+                <h4>Amit Sharma</h4>
+                <p>Amit provides a comfortable journey with clean and well-maintained cars. Excellent for long trips!</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+
+            <!-- Driver 3 -->
+            <div class="driver-review">
+                <img src="car driver 3.jfif" alt="Driver 3">
+                <h4>Sunil Verma</h4>
+                <p>Sunil has great knowledge of routes and ensures a hassle-free journey. Customers highly recommend him!</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Explore India Tours & Travels. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
